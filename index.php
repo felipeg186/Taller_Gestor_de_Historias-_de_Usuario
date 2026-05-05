@@ -1,11 +1,8 @@
 <?php
-// Punto de entrada principal - Front Controller
 session_start();
 
-// Ruta base para CSS (relativa al index.php)
 define('BASE_CSS', '');
 
-// Autoload de clases
 spl_autoload_register(function ($class) {
     $paths = ['models/', 'controllers/'];
     foreach ($paths as $path) {
@@ -16,12 +13,10 @@ spl_autoload_register(function ($class) {
     }
 });
 
-// Leer parámetros de la URL
 $controller = $_GET['controller'] ?? 'sprint';
 $action     = $_GET['action']     ?? 'index';
 $id         = $_GET['id']         ?? null;
 
-// Enrutamiento simple
 switch ($controller) {
     case 'sprint':
         $ctrl = new SprintController();
@@ -37,7 +32,6 @@ switch ($controller) {
         $action = 'index';
 }
 
-// Llamar acción
 if (method_exists($ctrl, $action)) {
     $ctrl->$action($id);
 } else {

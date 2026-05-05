@@ -1,7 +1,7 @@
 </main>
 
 <footer class="site-footer">
-    <p>SprintBoard &copy; <?= date('Y') ?> &mdash; Gestor de Historias de Usuario</p>
+    <p> &copy; <?= date('Y') ?> &mdash; Gestor de Historias de Usuario-Felipe Gualteros-Camilo Blanco</p>
 </footer>
 
 </body>

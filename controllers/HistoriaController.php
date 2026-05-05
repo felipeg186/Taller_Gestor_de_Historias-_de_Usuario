@@ -93,7 +93,7 @@ class HistoriaController {
         require __DIR__ . '/../views/historias/edit.php';
     }
 
-    public function delete(?string $id): void {
+        public function delete(?string $id): void {
         $this->model->delete((int)$id);
         header('Location: index.php?controller=historia&action=index&msg=historia_eliminada');
         exit;

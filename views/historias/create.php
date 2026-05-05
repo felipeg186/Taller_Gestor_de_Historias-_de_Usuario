@@ -24,7 +24,7 @@
             <div class="form-group">
                 <label for="descripcion">Descripción</label>
                 <textarea id="descripcion" name="descripcion" rows="4"
-                          placeholder="Describe los criterios de aceptación y detalles relevantes..." required><?= htmlspecialchars($_POST['descripcion'] ?? '') ?></textarea>
+                          placeholder="Describe los criterios de aceptación y detalles relevantes" required><?= htmlspecialchars($_POST['descripcion'] ?? '') ?></textarea>
             </div>
 
             <div class="form-row">
