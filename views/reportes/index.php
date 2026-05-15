@@ -8,7 +8,7 @@
 
 <section class="reporte-page">
 
-    <!-- Selector de Sprint -->
+    
     <form method="GET" action="index.php" class="reporte-selector">
         <input type="hidden" name="controller" value="reporte">
         <input type="hidden" name="action" value="index">
@@ -34,7 +34,7 @@
         </p>
     </div>
 
-    <!-- Tarjetas resumen general -->
+    
     <div class="stats-row">
         <div class="stat-card stat-card--total">
             <span class="stat-card__num"><?= $resumen['total'] ?></span>
@@ -58,7 +58,7 @@
         </div>
     </div>
 
-    <!-- Barra de progreso -->
+    
     <?php
         $pct = $resumen['total'] > 0
             ? round(($resumen['finalizadas'] / $resumen['total']) * 100)
@@ -74,7 +74,6 @@
         </div>
     </div>
 
-    <!-- Tabla por responsable -->
     <?php if (!empty($porResponsable)): ?>
     <div class="reporte-seccion">
         <h3 class="reporte-seccion__titulo">Desglose por Responsable</h3>

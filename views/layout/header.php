@@ -27,7 +27,7 @@
 
 <main class="site-main">
 <?php
-// Mensajes flash
+
 $mensajes = [
     'sprint_creado'       => ['tipo' => 'ok',   'texto' => 'Sprint creado correctamente.'],
     'sprint_actualizado'  => ['tipo' => 'ok',   'texto' => 'Sprint actualizado correctamente.'],
