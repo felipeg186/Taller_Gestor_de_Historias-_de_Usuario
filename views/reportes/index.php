@@ -1,3 +1,10 @@
+<?php
+/** @var array      $sprints        */
+/** @var int        $sprintId       */
+/** @var array|null $sprintSel      */
+/** @var array|null $resumen        */
+/** @var array      $porResponsable */
+?>
 <?php require __DIR__ . '/../layout/header.php'; ?>
 
 <section class="page-hero">

@@ -1,3 +1,7 @@
+<?php
+/** @var array      $sprints        */
+/** @var array|null $historia      */
+?>
 <?php require __DIR__ . '/../layout/header.php'; ?>
 
 <section class="form-page">

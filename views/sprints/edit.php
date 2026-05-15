@@ -1,3 +1,6 @@
+<?php
+/** @var array      $sprint        */
+?>
 <?php require __DIR__ . '/../layout/header.php'; ?>
 
 <section class="form-page">
