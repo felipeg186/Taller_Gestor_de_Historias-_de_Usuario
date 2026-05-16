@@ -14,7 +14,7 @@
 </section>
 
 <?php
-// Soporte para ambos modos: con $porSprint (todas) o $historias (de un sprint)
+
 $estadoClases = [
     'nueva'       => 'badge--nueva',
     'activa'      => 'badge--activa',
@@ -24,7 +24,7 @@ $estadoClases = [
 ?>
 
 <?php if (isset($porSprint)): ?>
-    <!-- Modo: todas las historias agrupadas por sprint -->
+    
     <?php if (empty($porSprint)): ?>
         <div class="empty-state">
             <span class="empty-icon">📝</span>
@@ -41,7 +41,7 @@ $estadoClases = [
     <?php endif; ?>
 
 <?php else: ?>
-    <!-- Modo: historias de un sprint específico -->
+    
     <?php if (empty($historias)): ?>
         <div class="empty-state">
             <span class="empty-icon">📝</span>
